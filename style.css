@@ -305,6 +305,14 @@
   
     animation: hero 12s infinite;
   }
+
+  .pc-show {
+    display: block;
+  }
+  
+  .sp-show {
+    display: none;
+  }
   
   .hero-slide {
     position: relative;
@@ -1415,6 +1423,25 @@
   
       justify-self: auto;
     }
+
+    .hero-track {
+      height: auto;
+    }
+    .hero {
+      width: 100%;
+      min-height: auto;
+      height: auto;
+    }
+    .hero-slide img {
+      object-fit: contain;
+    }
+    .pc-show {
+      display: none;
+    }
+    
+    .sp-show {
+      display: block;
+    }
   
   
     /* PRODUCT */
@@ -1649,7 +1676,7 @@
     .concept-photo-two {
       left: 0;
   
-      bottom: -2%;
+      bottom: -10%;
   
       width: 50%;
   
@@ -1728,6 +1755,18 @@
       border-left-width: 6px;
       border-right-width: 6px;
       border-bottom-width: 9px;
+    }
+
+
+    /* MENU */
+    .search-icon {
+      font-size: clamp(40px, 1.7vw, 40px);
+    }
+
+    .menu-open {
+        font-size: clamp(32px, 1.7vw, 32px);
+        position: relative;
+        top: -3px;
     }
   }
   
